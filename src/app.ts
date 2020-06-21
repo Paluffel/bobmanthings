@@ -75,7 +75,7 @@ mirror.setBehavior(ButtonBehavior).onButton("pressed", (user: User) => {
     if (!this.attachedItems[user.id]) {
 // If item for user does not exist, create it and add to list.
 this.attachedItems[user.id] = Actor.CreateFromLibrary(this.context, {
-    resourceId: "artifact: 1496629452858196474",
+    resourceId: "artifact: 1500238193650303569",
     actor: {
         name: 'Retro',
         attachment: {
