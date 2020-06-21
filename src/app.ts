@@ -62,7 +62,7 @@ export default class HelloWorld {
         exclusiveToUser: user.id,
         attachment: {
             userId: user.id,
-            attachPoint: 'right-hand'
+            attachPoint: 'spine-middle'
         },
         transform: {local: {
             position: { x: 0, y: 0, z:0  },
