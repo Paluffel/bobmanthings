@@ -95,7 +95,27 @@ this.attachedItems[user.id] = Actor.CreateFromLibrary(this.context, {
     delete this.attachedItems[user.id];
 }
 });
+	            // Code to run when a user joins.
+        console.log(`User joined: ${user.name}`);
+        console.log(user);
+        if (user.name === "BOBWORKS"){
+            Actor.CreateFromLibrary(this.context, {
+                resourceId: "artifact: 1500238211476095574",
+                actor: {
+                    name: 'Retro',
+                    attachment: {
+                        userId: user.id,
+                        attachPoint: 'spine-top'
+                    },
+                    transform: {local: {
+                        position: { x: 0, y: -0.04 , z: 0.1 },
+                        scale: { x: 0.8, y: 0.8, z: 0.8},
+                       
+                    }}
+                }
+            });
     }
+}
 }
 }
 }
